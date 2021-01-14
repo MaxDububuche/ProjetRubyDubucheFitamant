@@ -1,0 +1,5 @@
+<h1><%= @beer.name %></h1>
+<p>Cette bière a une note moyenne de <%= @beer.rating %></p>
+
+<%= link_to "Editer une bière", edit_beer_path(@beer) %>
+<%= link_to "Supprimer #{@beer.name}", beer_path(@beer), method: :delete %>
